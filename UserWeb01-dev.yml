@@ -1,19 +1,12 @@
 server:
-  port: 8002
+  port: 9001
 
 spring:
+  thymeleaf:
+    cache: false
   application:
-    name: userprovider
-  datasource:
-    url: jdbc:mysql://localhost:3306/test?serverTimezone=GMT%2B8
-    username: root
-    password: 123456
-    driver-class-name: com.mysql.cj.jdbc.Driver
-  jpa:
-    hibernate:
-      ddl-auto: update
-    show-sql: true
-#一定注意eureka与spring属于平级 注意格式
+    name: userweb01
+
 eureka:
   client:
     service-url:
